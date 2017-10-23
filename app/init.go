@@ -2,6 +2,10 @@ package app
 
 import (
 	"github.com/revel/revel"
+	// "github.com/joho/godotenv"
+	// "log"
+	// "os"
+	// "fmt"
 )
 
 var (
@@ -13,6 +17,18 @@ var (
 )
 
 func init() {
+	// pwd, err := os.Getwd()
+ //    if err != nil {
+ //        fmt.Println(err)
+ //        os.Exit(1)
+ //    }
+ //    fmt.Println(pwd)
+
+	// err := godotenv.Load()
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
+
 	// Filters is the default set of global filters.
 	revel.Filters = []revel.Filter{
 		revel.PanicFilter,             // Recover from panics and display an error page instead.
