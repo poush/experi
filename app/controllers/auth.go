@@ -2,7 +2,7 @@
 * @Author: Piyush Agrawal
 * @Date:   2017-10-22 14:24:25
 * @Last Modified by:   Piyush Agrawal
-* @Last Modified time: 2017-10-23 00:26:19
+* @Last Modified time: 2017-10-23 20:17:47
 */
 
 package controllers
@@ -21,8 +21,9 @@ var DO = &oauth2.Config{
 	ClientID:     os.Getenv("clientid"),
 	ClientSecret: os.Getenv("secret"),
 	Scopes:       ["write"],
-	Endpoint:     "",
-	RedirectURL:  "http://localhost:9000/Auth/Callback",
+	AuthURL:      "https://graph.facebook.com/oauth/authorize",
+	TokenURL:     "https://graph.facebook.com/oauth/access_token",
+	RedirectURL:  os.Getenv("redirecr_url"),
 }
 
 func (c Auth) Register() revel.Result {
