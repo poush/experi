@@ -1,1 +1,1 @@
-web revel run github.com/poush/sharkDeploy prod $PORT
+web: revel run github.com/poush/sharkDeploy dev $PORT
