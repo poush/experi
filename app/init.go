@@ -17,17 +17,6 @@ var (
 )
 
 func init() {
-	// pwd, err := os.Getwd()
- //    if err != nil {
- //        fmt.Println(err)
- //        os.Exit(1)
- //    }
- //    fmt.Println(pwd)
-
-	// err := godotenv.Load()
-	// if err != nil {
-	// 	log.Fatal(err)
-	// }
 
 	// Filters is the default set of global filters.
 	revel.Filters = []revel.Filter{

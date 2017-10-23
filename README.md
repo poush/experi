@@ -43,3 +43,4 @@ The directory structure of a generated Revel application:
 
 github.com/joho/godotenv
 golang.org/x/oauth2
+golang.org/x/crypto/bcrypt
