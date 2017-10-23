@@ -1,0 +1,17 @@
+{{set . "title" "Home"}}
+{{template "header.html" .}}
+
+<div class="container">
+  <div class="jumbotron mt-3">
+    <h1>Conenct with DigitalOcean</h1>
+    <p class="lead"></p>
+    <a class="btn btn-lg btn-primary" href="https://cloud.digitalocean.com/v1/oauth/authorize?client_id={{.authUrl}}&redirect_uri=http://localhost:9000/auth/callback&response_type=code&scope=write" role="button">Login with DigitalOcean &raquo;</a>
+    {{ if .err }}
+    <div class="alert alert-danger" style="margin-top: 20px">
+    	Write Access is required to deploy your app :)
+    </div>
+    {{end}}
+  </div>
+</div>
+
+{{template "footer.html" .}}

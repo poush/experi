@@ -1,2 +1,4 @@
-terra*
-Notes
+test-results/
+tmp/
+routes/
+app/.env
