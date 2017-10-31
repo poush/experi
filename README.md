@@ -7,6 +7,11 @@ A high-productivity web framework for the [Go language](http://www.golang.org/).
 
    revel run myapp
 
+### Deploy on Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/heroku/go-getting-started)
+
+
 ### Go to http://localhost:9000/ and you'll see:
 
     "It works"
